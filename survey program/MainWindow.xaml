@@ -6,19 +6,27 @@
         xmlns:local="clr-namespace:survey_program"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="UI.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <Grid Background="#FF1E1E1E">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="160" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Column="0" 
+        <Button Style="{DynamicResource ButtonStyles}" Grid.Column="0" 
                 Content="Налаштування" 
                 VerticalAlignment="Top" 
                 HorizontalAlignment="Stretch" 
                 Margin="0"
-                Height="50" FontSize="18"/>
+                Height="50" FontSize="18" Background="#FF1E1E1E" BorderBrush="#FF1E1E1E" Foreground="White"/>
 
         <Frame Grid.Column="1"
               />
