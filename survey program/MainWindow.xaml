@@ -26,7 +26,7 @@
                 VerticalAlignment="Top" 
                 HorizontalAlignment="Stretch" 
                 Margin="0"
-                Height="50" FontSize="18" Background="#FF1E1E1E" BorderBrush="#FF1E1E1E" Foreground="White"/>
+                Height="50" FontSize="18" Background="#FF1E1E1E" BorderBrush="#FF1E1E1E" Foreground="White" />
 
         <Frame Grid.Column="1"
               />
