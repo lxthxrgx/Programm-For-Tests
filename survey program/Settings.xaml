@@ -8,6 +8,15 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Settings">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="DefaultButtons.xaml"/>
+                <ResourceDictionary Source="UI.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="39*"/>
@@ -31,9 +40,9 @@
 
 
 
-        <Button Grid.Column="2" Grid.Row="1" Content="Відкрити" HorizontalAlignment="Stretch" Margin="5"/>
-        <Button Grid.Column="2" Grid.Row="3" Content="Відкрити" HorizontalAlignment="Stretch" Margin="5"/>
-        <Button Grid.Column="2" Grid.Row="5" Content="Відкрити" HorizontalAlignment="Stretch" Margin="5"/>
+        <Button Style="{DynamicResource DefaultButtonsPage}" Grid.Column="2" Grid.Row="1" Content="Відкрити" HorizontalAlignment="Stretch" Margin="5"/>
+        <Button Style="{DynamicResource DefaultButtonsPage}" Grid.Column="2" Grid.Row="3" Content="Відкрити" HorizontalAlignment="Stretch" Margin="5"/>
+        <Button  Style="{DynamicResource DefaultButtonsPage}" Grid.Column="2" Grid.Row="5" Content="Відкрити" HorizontalAlignment="Stretch" Margin="5"/>
 
         <Button Grid.Column="1" Grid.Row="6" Content="Зберегти" VerticalAlignment="Bottom" Height="20" />
     </Grid>
