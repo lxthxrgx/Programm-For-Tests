@@ -16,19 +16,33 @@
     </Window.Resources>
 
     <Grid Background="#FF1E1E1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="286*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Button Style="{DynamicResource ButtonStyles}" Grid.Column="0" 
+        <Button Style="{DynamicResource ButtonStyles}" Grid.Column="0" Grid.Row="2" Click="LoadPage_Click"
                 Content="Налаштування" 
-                VerticalAlignment="Top" 
-                HorizontalAlignment="Stretch" 
-                Margin="0"
+                VerticalAlignment="Center"
                 Height="50" FontSize="18" Background="#FF1E1E1E" BorderBrush="#FF1E1E1E" Foreground="White" />
 
-        <Frame Grid.Column="1"
+        <Button Style="{DynamicResource ButtonStyles}" Grid.Column="0" Grid.Row="1" 
+            Content="Тестування" 
+            VerticalAlignment="Center"
+            Height="50" FontSize="18" Background="#FF1E1E1E" BorderBrush="#FF1E1E1E" Foreground="White" />
+        
+        <Button Style="{DynamicResource ButtonStyles}" Grid.Column="0" Grid.Row="0" 
+            Content="Головна" 
+            VerticalAlignment="Center"
+            Height="50" FontSize="18" Background="#FF1E1E1E" BorderBrush="#FF1E1E1E" Foreground="White" />
+
+        <Frame Name="contentFrame" Grid.Column="1" Grid.RowSpan="4"
               />
     </Grid>
 </Window>

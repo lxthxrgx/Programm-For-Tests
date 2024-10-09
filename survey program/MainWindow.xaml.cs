@@ -20,5 +20,11 @@ namespace survey_program
         {
             InitializeComponent();
         }
+
+        private void LoadPage_Click(object sender, RoutedEventArgs e)
+        {
+            // Устанавливаем источник страницы для Frame
+            contentFrame.Source = new Uri("Settings.xaml", UriKind.Relative);
+        }
     }
 }
